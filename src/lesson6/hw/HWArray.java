@@ -1,18 +1,17 @@
-package lesson1.hw;
-
+package lesson6.hw;
+/*
+* Создать метод, который сохраняет в массиве все нечетные числа и после этого печатает все элементы в одной строке от 0 до 100
+* */
 public class HWArray {
     public static void main(String[] args) {
         printOddNumbers();
     }
 
-    public static int[] printOddNumbers() {
+    public static void printOddNumbers() {
         int[] oddNumbers = new int[50];
-        int index = 0;
-
-        for (int i = 0; i <= 100; i++) {
+        for (int i = 0, index = 0; i <= 100; i++, index++) {
             if (i % 2 != 0) {
                 oddNumbers[index] = i;
-                index++;
             }
         }
         for (int i = 0; i < oddNumbers.length; i++) {
@@ -21,6 +20,5 @@ public class HWArray {
                 System.out.print(", ");
             }
         }
-        return oddNumbers;
     }
 }
