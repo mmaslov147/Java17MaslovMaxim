@@ -1,5 +1,7 @@
 package lesson6.hw;
-
+/*
+* Создать метод, который сохраняет в массиве все нечетные числа и после этого печатает все элементы в одной строке от 0 до 100
+* */
 public class HWArray {
     public static void main(String[] args) {
         printOddNumbers();
