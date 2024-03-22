@@ -1,4 +1,4 @@
-package lesson1.hw;
+package lesson6.hw;
 
 public class HWArray {
     public static void main(String[] args) {
@@ -7,12 +7,9 @@ public class HWArray {
 
     public static int[] printOddNumbers() {
         int[] oddNumbers = new int[50];
-        int index = 0;
-
-        for (int i = 0; i <= 100; i++) {
+        for (int i = 0, index = 0; i <= 100; i++, index++) {
             if (i % 2 != 0) {
                 oddNumbers[index] = i;
-                index++;
             }
         }
         for (int i = 0; i < oddNumbers.length; i++) {
