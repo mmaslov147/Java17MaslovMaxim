@@ -5,7 +5,7 @@ public class HWArray {
         printOddNumbers();
     }
 
-    public static int[] printOddNumbers() {
+    public static void printOddNumbers() {
         int[] oddNumbers = new int[50];
         for (int i = 0, index = 0; i <= 100; i++, index++) {
             if (i % 2 != 0) {
@@ -18,6 +18,5 @@ public class HWArray {
                 System.out.print(", ");
             }
         }
-        return oddNumbers;
     }
 }
