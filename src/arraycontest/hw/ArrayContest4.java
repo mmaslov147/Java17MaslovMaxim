@@ -14,7 +14,7 @@ public class ArrayContest4 {
         String wordLower = word.toLowerCase();
         for (int i = 0; i < array.length; i++) {
             String stringLower = array[i].toLowerCase();
-            if (Arrays.asList(stringLower.split(" ")).contains(wordLower)) {
+            if (stringLower.contains(wordLower)){
                 return true;
             }
         }

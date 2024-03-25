@@ -11,10 +11,10 @@ public class ArrayContest3 {
 
     //3. Дан массив целых чисел. Вернуть массив квадратов этих чисел.
     public static int[] powerIntArray(int[] array) {
-        int[] array2 = new int[array.length];
+        int[] arraySquare = new int[array.length];
         for (int i = 0; i < array.length; i++) {
-            array2[i] = array[i] * array[i];
+            arraySquare[i] = array[i] * array[i];
         }
-        return array2;
+        return arraySquare;
     }
 }

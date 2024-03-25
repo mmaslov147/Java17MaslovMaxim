@@ -11,18 +11,18 @@ public class ArrayContest2 {
 
     // 2. Дан массив строк. Вернуть массив строк содержащих букву a.
     public static String[] filterStringArray(String[] array) {
-        int count1 = 0;
+        int countOfWords = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i].contains("a")) {
-                count1++;
+                countOfWords++;
             }
         }
-        String[] arrayString = new String[count1];
-        int count2 = 0;
+        String[] arrayString = new String[countOfWords];
+        int index = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i].contains("a")){
-                arrayString[count2] = array[i];
-                count2++;
+                arrayString[index] = array[i];
+                index++;
             }
 
         }

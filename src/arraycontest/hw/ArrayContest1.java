@@ -11,18 +11,18 @@ public class ArrayContest1 {
 
     // 1. Дан массив целых чисел. Вернуть массив только четных чисел.
     public static int[] filterIntArray(int[] array) {
-        int count1 = 0;
+        int evenList = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 == 0) {
-                count1++;
+                evenList++;
             }
         }
-        int[] arrayNums = new int[count1];
-        int count2 = 0;
+        int[] arrayNums = new int[evenList];
+        int countEvenNumbers = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 == 0){
-                arrayNums[count2] = array[i];
-                count2++;
+                arrayNums[countEvenNumbers] = array[i];
+                countEvenNumbers++;
             }
 
         }
