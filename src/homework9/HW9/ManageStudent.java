@@ -2,7 +2,7 @@ package homework9.HW9;
 
 public class ManageStudent {
     public static void main(String[] args) {
-        Student irina = new Student("Irina", 19, 4);
+        Student irina = new Student("Irina", 19, 6f);
         System.out.println(irina);
 
         boolean mark = irina.checkMark();
