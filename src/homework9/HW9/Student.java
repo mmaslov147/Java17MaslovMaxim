@@ -25,7 +25,7 @@ public class Student {
     }
 
     public Student(String studentName, float studentMediumMark, int studentAge) {
-        this(studentAge, studentName,studentMediumMark);
+        this(studentName, studentAge, studentMediumMark);
     }
 
     public void printStudentInfo() {
