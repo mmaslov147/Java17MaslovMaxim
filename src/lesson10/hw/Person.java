@@ -23,7 +23,7 @@ public class Person {
 
     public void setName(String name) {
         if (name.length() < 3 && name.length() > 15) {
-            System.out.println("Длина имени должна быть больше 3 и меньше 15");
+            System.err.println();
         } else {
             this.name = name;
         }
@@ -35,7 +35,7 @@ public class Person {
 
     public void setAge(int age) {
         if (age < 0 && age > 100) {
-            System.out.println("Возраст должен быть больше 0 и меньше 100");
+            System.err.println();
         } else {
             this.age = age;
         }
@@ -47,7 +47,7 @@ public class Person {
 
     public void setHeight(int height) {
         if (height < 120 && height > 220) {
-            System.out.println("Рост должен быть не меньше 120 и не больше 220");
+            System.err.println();
         } else {
             this.height = height;
         }
