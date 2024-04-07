@@ -3,15 +3,15 @@ package lesson12.hw;
 Например: Car, Truck, Plane ... extends Transport */
 public abstract class Transport {
 
-    abstract void printInfo();
+    public abstract void printInfo();
 
-    abstract void go();
+    public abstract void go();
 
-    void calculateDistance(int dist) {
+    public void calculateDistance(int dist) {
         System.out.println("Distance: " + dist + "km");
     }
 
-    void calculateDistance(int time, int speed) {
+    public void calculateDistance(int time, int speed) {
         int dist = time * speed;
         System.out.println("Distance: " + dist + "km");
     }
