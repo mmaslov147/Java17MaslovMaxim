@@ -1,5 +1,6 @@
 package lesson14.hw;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /*Добавить в свои классы проверку и выкидывать исключения в случае ошибок.
@@ -12,10 +13,6 @@ public class HWException {
             System.out.print("Введите размер массива: ");
             int size = scanner.nextInt();
 
-            if (size <= 0) {
-                System.out.println("Размер массива должен быть положительным числом.");
-                return;
-            }
 
             int[] array = new int[size];
 
@@ -40,8 +37,8 @@ public class HWException {
             } else {
                 System.out.println("Sum: " + sum);
             }
-        } catch (Exception e) {
-            System.out.println("Произошла ошибка ввода данных: " + e.getMessage());
+        } catch (NegativeArraySizeException exception) {
+            System.err.println("Произошла ошибка ввода данных: " + exception.getMessage());
         }
     }
 }
