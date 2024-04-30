@@ -11,7 +11,6 @@ public class CollectionUtils {
         System.out.println("Коллекция без дубликатов: " + wordsWithoutDuplicates);
     }
     public static <T> Collection<T> removeDuplicates(Collection<T> collection){
-        HashSet<T> set = new HashSet<>(collection);
-        return set;
+        return new HashSet<>(collection);
     }
 }
