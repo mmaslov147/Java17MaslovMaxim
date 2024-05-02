@@ -28,6 +28,7 @@ public class Car implements Comparable<Car> {
 
     @Override
     public int compareTo(Car other) {
-        return this.age - ((Car) other).age;
+        Car otherCar = (Car) other;
+        return this.age - otherCar.age;
     }
 }
