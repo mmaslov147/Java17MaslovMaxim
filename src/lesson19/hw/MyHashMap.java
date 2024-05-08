@@ -33,18 +33,14 @@ public class MyHashMap {
 
     public static void printKeys(HashMap<String, Toy> map) {
         System.out.println("Печать набор из имени продуктов:");
-        for (String key : map.keySet()) {
-            System.out.println(key);
-        }
-        System.out.println();
+        System.out.println(map.keySet());
+
     }
 
 
     public static void printValues(HashMap<String, Toy> map) {
-        System.out.println("Печать значений продуктов:");
-        for (Toy toy : map.values()) {
-            System.out.println(toy);
-        }
-        System.out.println();
+        System.out.println("\nПечать значений продуктов:");
+        System.out.println(map.values());
+
     }
 }
